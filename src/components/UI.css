@@ -1,0 +1,114 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    height: 44px;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: var(--color-accent);
+    color: var(--color-white);
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #6D0000;
+}
+
+.btn-primary:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: rgba(139, 0, 0, 0.05);
+}
+
+.btn-secondary:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.btn-success {
+    background: var(--color-success);
+    color: var(--color-white);
+}
+
+.btn-success:hover:not(:disabled) {
+    background: #3A5331;
+}
+
+.btn-warning {
+    background: var(--color-warning);
+    color: var(--color-white);
+}
+
+.card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: var(--space-3);
+}
+
+.card-title {
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    font-size: var(--font-size-base);
+    background: rgba(17, 17, 17, 0.02);
+}
+
+.card-content {
+    padding: var(--space-3);
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-input-border);
+    border-radius: var(--radius);
+    background: var(--color-white);
+    font-size: var(--font-size-base);
+    outline: none;
+}
+
+.input:focus {
+    border-color: var(--color-accent);
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    background: rgba(17, 17, 17, 0.05);
+}
+
+.badge-not-started {
+    background: rgba(17, 17, 17, 0.1);
+}
+
+.badge-in-progress {
+    background: rgba(193, 154, 107, 0.2);
+    color: #856404;
+}
+
+.badge-shipped {
+    background: rgba(74, 103, 65, 0.2);
+    color: #155724;
+}
